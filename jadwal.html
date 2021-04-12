@@ -15,6 +15,8 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
 
@@ -99,11 +101,10 @@
                             <td id="onr1" align="center"></td>
                             <td id="offr1" align="center"></td>
                             <td align="center">
-                                <button id="jadwal1" class="btn btn-danger">
-                                    <i class="fas fa-trash">
-                                    </i>
-                                    Hapus
-                                </button>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="switch1">
+                                    <label class="custom-control-label" for="switch1"></label>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -112,11 +113,10 @@
                             <td id="onr2" align="center"></td>
                             <td id="offr2" align="center"></td>
                             <td align="center">
-                                <button id="jadwal2" class="btn btn-danger">
-                                    <i class="fas fa-trash">
-                                    </i>
-                                    Hapus
-                                </button>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="switch2">
+                                    <label class="custom-control-label" for="switch2"></label>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -125,12 +125,10 @@
                             <td id="onr3" align="center"></td>
                             <td id="offr3" align="center"></td>
                             <td align="center">
-                                <button id="jadwal3" class="btn btn-danger">
-                                    <i class="fas fa-trash">
-                                    </i>
-                                    Hapus
-                                </button>
-                            </td>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="switch3">
+                                    <label class="custom-control-label" for="switch3"></label>
+                                </div>                            </td>
                         </tr>
                         <tr>
                             <td id="nomor">4</td>
@@ -138,11 +136,10 @@
                             <td id="onr4" align="center"></td>
                             <td id="offr4" align="center"></td>
                             <td align="center">
-                                <button id="jadwal4" class="btn btn-danger">
-                                    <i class="fas fa-trash">
-                                    </i>
-                                    Hapus
-                                </button>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="switch4">
+                                    <label class="custom-control-label" for="switch4"></label>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -151,11 +148,10 @@
                             <td id="onr5" align="center"></td>
                             <td id="offr5" align="center"></td>
                             <td align="center">
-                                <button id="jadwal5" class="btn btn-danger">
-                                    <i class="fas fa-trash">
-                                    </i>
-                                    Hapus
-                                </button>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="switch5">
+                                    <label class="custom-control-label" for="switch5"></label>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -164,11 +160,10 @@
                             <td id="onr6" align="center"></td>
                             <td id="offr6" align="center"></td>
                             <td align="center">
-                                <button id="jadwal6" class="btn btn-danger">
-                                    <i class="fas fa-trash">
-                                    </i>
-                                    Hapus
-                                </button>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="switch6">
+                                    <label class="custom-control-label" for="switch6"></label>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -177,11 +172,10 @@
                             <td id="onr7" align="center"></td>
                             <td id="offr7" align="center"></td>
                             <td align="center">
-                                <button id="jadwal7" class="btn btn-danger">
-                                    <i class="fas fa-trash">
-                                    </i>
-                                    Hapus
-                                </button>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="switch7">
+                                    <label class="custom-control-label" for="switch7"></label>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -190,11 +184,12 @@
                             <td id="onr8" align="center"></td>
                             <td id="offr8" align="center"></td>
                             <td align="center">
-                                <button id="jadwal8" class="btn btn-danger">
-                                    <i class="fas fa-trash">
-                                    </i>
-                                    Hapus
-                                </button>
+                                <!-- Material checked -->
+                                <!-- Default switch -->
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="switch8">
+                                    <label class="custom-control-label" for="switch8"></label>
+                                </div>
                             </td>		
                         </tr>
                         
