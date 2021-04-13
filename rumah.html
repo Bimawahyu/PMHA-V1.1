@@ -34,7 +34,7 @@
 				<a class="list-group-item list-group-item-action bg-light fas fa-home" href="/rumah_button">
                     Home Automation
                 </a>
-                <a class="list-group-item list-group-item-action bg-light fas fa-clock" href="/jadwal_button">
+                <a class="list-group-item list-group-item-action bg-light fa fa-clock" href="/jadwal_button">
                     Schedule
                 </a>
                 <!-- <div class="row container pt-3">
@@ -341,7 +341,16 @@
                                         </div>
                                         <div class="container">
                                             <div class="text-center">
-                                                <p>Ruang 8</p>
+                                                <div class="container">
+                                                    <form action="">
+                                                        <select class="dropdown-toggle" id="cars" name="cars">
+                                                            <option value="volvo">Volvo</option>
+                                                            <option value="saab">Saab</option>
+                                                            <option value="fiat">Fiat</option>
+                                                            <option value="audi">Audi</option>
+                                                        </select>
+                                                    </form>
+                                                </div>
                                                 <label class="switch"><input type="checkbox" onchange="check()" id="s8" %status8%><span class="slider"></span></label>
                                                 <form action="jadwal8">
                                                     <div class="form-group row">
