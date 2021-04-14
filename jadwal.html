@@ -87,117 +87,147 @@
                         class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                         <h1 class="h2">Jadwal</h1>
                     </div>
-                    <table class="table table-hover link-primary">
-                        <tr>
-                            <th align="center">No.</th>
-                            <th align="center">Unit</th>
-                            <th align="center">ON</th>
-                            <th align="center">OFF</th>
-                        </tr>
-
-                        <tr>
-                            <td id="nomor">1</td>
-                            <td id="unit">Ruang 1</td>
-                            <td id="onr1" align="center"></td>
-                            <td id="offr1" align="center"></td>
-                            <td align="center">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" onchange="check()" id="switch1" %T1%>
-                                    <label class="custom-control-label" for="switch1"></label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="nomor">2</td>
-                            <td id="unit">Ruang 2</td>
-                            <td id="onr2" align="center"></td>
-                            <td id="offr2" align="center"></td>
-                            <td align="center">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" onchange="check()" id="switch2" %T2%>
-                                    <label class="custom-control-label" for="switch2"></label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="nomor">3</td>
-                            <td id="unit">Ruang 3</td>
-                            <td id="onr3" align="center"></td>
-                            <td id="offr3" align="center"></td>
-                            <td align="center">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" onchange="check()" id="switch3" %T3%> 
-                                    <label class="custom-control-label" for="switch3"></label>
-                                </div>                            
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="nomor">4</td>
-                            <td id="unit">Ruang 4</td>
-                            <td id="onr4" align="center"></td>
-                            <td id="offr4" align="center"></td>
-                            <td align="center">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" onchange="check()" id="switch4" %T4%>
-                                    <label class="custom-control-label" for="switch4"></label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="nomor">5</td>
-                            <td id="unit">Ruang 5</td>
-                            <td id="onr5" align="center"></td>
-                            <td id="offr5" align="center"></td>
-                            <td align="center">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" onchange="check()" id="switch5" %T5%>
-                                    <label class="custom-control-label" for="switch5"></label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="nomor">6</td>
-                            <td id="unit">Ruang 6</td>
-                            <td id="onr6" align="center"></td>
-                            <td id="offr6" align="center"></td>
-                            <td align="center">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" onchange="check()" id="switch6" %T6%>
-                                    <label class="custom-control-label" for="switch6"></label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="nomor">7</td>
-                            <td id="unit">Ruang 7</td>
-                            <td id="onr7" align="center"></td>
-                            <td id="offr7" align="center"></td>
-                            <td align="center">
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" onchange="check()" id="switch7" %T7%>
-                                    <label class="custom-control-label" for="switch7"></label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="nomor">8</td>
-                            <td id="unit">Ruang 8</td>
-                            <td id="onr8" align="center"></td>
-                            <td id="offr8" align="center"></td>
-                            <td align="center">
-                                <!-- Material checked -->
-                                <!-- Default switch -->
-                                <div class="custom-control custom-switch">
-                                    <input type="checkbox" class="custom-control-input" onchange="check()" id="switch8" %T8%>
-                                    <label class="custom-control-label" for="switch8"></label>
-                                </div>
-                            </td>		
-                        </tr>
-                        
-
-                    </table>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-light" align="center"> 
+                                    <tr>
+                                        <th scope="col" align="center">No.</th>
+                                        <th scope="col">Unit</th>
+                                        <th scope="col">ON</th>
+                                        <th scope="col">OFF</th>
+                                        <th scope="col">Switch</th>
+                                        <th scope="col" class="center">Nama Ruangan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" id="nomor" align="center">1</th>
+                                        <td align="center" id="unit">Ruang 1</td>
+                                        <td id="onr1" align="center"></td>
+                                        <td id="offr1" align="center"></td>
+                                        <td align="center">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" onchange="check()" id="switch1" %T1%>
+                                                <label class="custom-control-label" for="switch1"></label>
+                                            </div>
+                                        </td>
+                                        <td align="center">
+                                            <input class="form-control-sm" type="text" name="input1" id="int1">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th id="nomor">2</th>
+                                        <td id="unit" align="center">Ruang 2</td>
+                                        <td id="onr2" align="center"></td>
+                                        <td id="offr2" align="center"></td>
+                                        <td align="center">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" onchange="check()" id="switch2" %T2%>
+                                                <label class="custom-control-label" for="switch2"></label>
+                                            </div>
+                                        </td>
+                                        <td align="center">
+                                            <input class="form-control-sm" type="text" name="input2" id="int2">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th id="nomor">3</th>
+                                        <td id="unit" align="center">Ruang 3</td>
+                                        <td id="onr3" align="center"></td>
+                                        <td id="offr3" align="center"></td>
+                                        <td align="center">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" onchange="check()" id="switch3" %T3%> 
+                                                <label class="custom-control-label" for="switch3"></label>
+                                            </div>                            
+                                        </td>
+                                        <td align="center">
+                                            <input class="form-control-sm" type="text" name="input3" id="int3">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th id="nomor">4</th>
+                                        <td id="unit" align="center">Ruang 4</td>
+                                        <td id="onr4" align="center"></td>
+                                        <td id="offr4" align="center"></td>
+                                        <td align="center">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" onchange="check()" id="switch4" %T4%>
+                                                <label class="custom-control-label" for="switch4"></label>
+                                            </div>
+                                        </td>
+                                        <td align="center">
+                                            <input class="form-control-sm" type="text" name="input4" id="int4">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th id="nomor">5</th>
+                                        <td id="unit" align="center">Ruang 5</td>
+                                        <td id="onr5" align="center"></td>
+                                        <td id="offr5" align="center"></td>
+                                        <td align="center">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" onchange="check()" id="switch5" %T5%>
+                                                <label class="custom-control-label" for="switch5"></label>
+                                            </div>
+                                        </td>
+                                        <td align="center">
+                                            <input class="form-control-sm" type="text" name="input5" id="int5">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th id="nomor">6</th>
+                                        <td id="unit" align="center">Ruang 6</td>
+                                        <td id="onr6" align="center"></td>
+                                        <td id="offr6" align="center"></td>
+                                        <td align="center">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" onchange="check()" id="switch6" %T6%>
+                                                <label class="custom-control-label" for="switch6"></label>
+                                            </div>
+                                        </td>
+                                        <td align="center">
+                                            <input class="form-control-sm" type="text" name="input6" id="int6">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th id="nomor">7</th>
+                                        <td id="unit" align="center">Ruang 7</td>
+                                        <td id="onr7" align="center"></td>
+                                        <td id="offr7" align="center"></td>
+                                        <td align="center">
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" onchange="check()" id="switch7" %T7%>
+                                                <label class="custom-control-label" for="switch7"></label>
+                                            </div>
+                                        </td>
+                                        <td align="center">
+                                            <input class="form-control-sm" type="text" name="input7" id="int7">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th id="nomor">8</th>
+                                        <td id="unit" align="center">Ruang 8</td>
+                                        <td id="onr8" align="center"></td>
+                                        <td id="offr8" align="center"></td>
+                                        <td align="center">
+                                            <!-- Material checked -->
+                                            <!-- Default switch -->
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" onchange="check()" id="switch8" %T8%>
+                                                <label class="custom-control-label" for="switch8"></label>
+                                            </div>
+                                        </td>
+                                        <td align="center">
+                                            <input class="form-control-sm" type="text" name="input8" id="int8">
+                                        </td>		
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    <footer class="text-center">Copyright &copy; 2021 PT. Ruang Cipta Teknologi</footer>
                 </div>
-                <footer class="text-center">Copyright &copy; 2021 PT. Ruang Cipta Teknologi</footer>
+                
             </main>
             
         </div>
